@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "6bb8142f6379fa0862a5bcbff6078796",
-    "content-hash": "8d1f67706ff7c275c2bae8090f96eeed",
+    "hash": "b8d2b6ad5458ce49ae8f8bb82231b30e",
+    "content-hash": "1fd34f63cea570bff4080ae87a69805b",
     "packages": [
         {
             "name": "braincrafted/bootstrap-bundle",
@@ -989,16 +989,16 @@
         },
         {
             "name": "doctrine/mongodb-odm",
-            "version": "1.0.4",
+            "version": "1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/mongodb-odm.git",
-                "reference": "f14ee65af497ced2c01b3daeae8d9ee318265277"
+                "reference": "318c9651bdf18a3bcb6f88b0bddd385e1a82284e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/mongodb-odm/zipball/f14ee65af497ced2c01b3daeae8d9ee318265277",
-                "reference": "f14ee65af497ced2c01b3daeae8d9ee318265277",
+                "url": "https://api.github.com/repos/doctrine/mongodb-odm/zipball/318c9651bdf18a3bcb6f88b0bddd385e1a82284e",
+                "reference": "318c9651bdf18a3bcb6f88b0bddd385e1a82284e",
                 "shasum": ""
             },
             "require": {
@@ -1013,6 +1013,7 @@
                 "symfony/console": "~2.3|~3.0"
             },
             "require-dev": {
+                "phpunit/phpunit": "~4.8|~5.0",
                 "symfony/yaml": "~2.3|~3.0"
             },
             "suggest": {
@@ -1067,7 +1068,7 @@
                 "odm",
                 "persistence"
             ],
-            "time": "2015-12-15 14:42:32"
+            "time": "2016-02-16 10:02:45"
         },
         {
             "name": "doctrine/mongodb-odm-bundle",
@@ -1326,6 +1327,144 @@
             "time": "2015-05-29 06:29:14"
         },
         {
+            "name": "gregwar/cache",
+            "version": "v1.0.10",
+            "target-dir": "Gregwar/Cache",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Gregwar/Cache.git",
+                "reference": "0a1a02e4943e95f491b3d2395609247385975622"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Gregwar/Cache/zipball/0a1a02e4943e95f491b3d2395609247385975622",
+                "reference": "0a1a02e4943e95f491b3d2395609247385975622",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Gregwar\\Cache": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Gregwar",
+                    "email": "g.passault@gmail.com"
+                }
+            ],
+            "description": "A lightweight file-system cache system",
+            "keywords": [
+                "cache",
+                "caching",
+                "file-system",
+                "system"
+            ],
+            "time": "2014-09-24 11:23:30"
+        },
+        {
+            "name": "gregwar/image",
+            "version": "v2.0.20",
+            "target-dir": "Gregwar/Image",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Gregwar/Image.git",
+                "reference": "2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Gregwar/Image/zipball/2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414",
+                "reference": "2c6bf2fb3b0eb844f0568d6ee55eeb86fc799414",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "gregwar/cache": "1.*",
+                "php": ">=5.3.0"
+            },
+            "suggest": {
+                "behat/transliterator": "Transliterator provides ability to set non-latin1 pretty names"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Gregwar\\Image": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Grégoire Passault",
+                    "email": "g.passault@gmail.com",
+                    "homepage": "http://www.gregwar.com/"
+                }
+            ],
+            "description": "Image handling",
+            "homepage": "https://github.com/Gregwar/Image",
+            "keywords": [
+                "gd",
+                "image"
+            ],
+            "time": "2015-05-30 19:24:37"
+        },
+        {
+            "name": "gregwar/image-bundle",
+            "version": "v2.1.0",
+            "target-dir": "Gregwar/ImageBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Gregwar/ImageBundle.git",
+                "reference": "9daa058e315116b01897f574063371e4e322d86a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Gregwar/ImageBundle/zipball/9daa058e315116b01897f574063371e4e322d86a",
+                "reference": "9daa058e315116b01897f574063371e4e322d86a",
+                "shasum": ""
+            },
+            "require": {
+                "ext-gd": "*",
+                "gregwar/image": "2.*",
+                "php": ">=5.3.3",
+                "symfony/framework-bundle": "^2.3 || ^3.0",
+                "twig/twig": "~1.12"
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Gregwar\\ImageBundle": ""
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Grégoire Passault",
+                    "email": "g.passault@gmail.com",
+                    "homepage": "http://www.gregwar.com/"
+                }
+            ],
+            "description": "Image handling bundle",
+            "homepage": "https://github.com/Gregwar/ImageBundle",
+            "keywords": [
+                "image",
+                "symfony"
+            ],
+            "time": "2015-12-22 09:21:44"
+        },
+        {
             "name": "incenteev/composer-parameter-handler",
             "version": "v2.1.2",
             "source": {
@@ -1488,20 +1627,20 @@
         },
         {
             "name": "integrated/content-bundle",
-            "version": "dev-INTEGRATED-370",
+            "version": "0.5.x-dev",
             "source": {
-                "type": "hg",
-                "url": "https://bitbucket.org/vpascal/integrated-content-bundle",
-                "reference": "73a25f1a2e3aa30f5bb114ab7df3b5f7b6db6264"
+                "type": "git",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle.git",
+                "reference": "c40a81a0819869ddfe9406dc85db84b1acc28786"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/vpascal/integrated-content-bundle/get/73a25f1a2e3aa30f5bb114ab7df3b5f7b6db6264.zip",
-                "reference": "73a25f1a2e3aa30f5bb114ab7df3b5f7b6db6264",
+                "url": "https://bitbucket.org/eactive/integrated-content-bundle/get/c40a81a0819869ddfe9406dc85db84b1acc28786.zip",
+                "reference": "c40a81a0819869ddfe9406dc85db84b1acc28786",
                 "shasum": ""
             },
             "require": {
-                "braincrafted/bootstrap-bundle": "~2.0",
+                "braincrafted/bootstrap-bundle": "~2.2.0",
                 "doctrine/doctrine-fixtures-bundle": "~2.2",
                 "doctrine/mongodb": ">=1.0.0",
                 "doctrine/mongodb-odm": "*",
@@ -1520,6 +1659,7 @@
                 "php": ">=5.4",
                 "symfony/framework-bundle": "~2.2",
                 "symfony/symfony": "~2.7",
+                "twbs/bootstrap": "3.*",
                 "vihuvac/recaptcha-bundle": "~2.0"
             },
             "require-dev": {
@@ -1540,6 +1680,7 @@
                     "Integrated\\Bundle\\ContentBundle\\": ""
                 }
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -1555,24 +1696,25 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2016-02-10 11:30:40"
+            "time": "2016-03-17 09:16:52"
         },
         {
             "name": "integrated/formtype-bundle",
-            "version": "dev-develop",
+            "version": "0.5.x-dev",
             "target-dir": "Integrated/Bundle/FormTypeBundle",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-formtype-bundle.git",
-                "reference": "d0c608501da478bd10b54d18bc66048a27cdb62e"
+                "reference": "5125498b56d7ffa5a38d09fd1fd000af7af489c1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-formtype-bundle/get/d0c608501da478bd10b54d18bc66048a27cdb62e.zip",
-                "reference": "d0c608501da478bd10b54d18bc66048a27cdb62e",
+                "url": "https://bitbucket.org/eactive/integrated-formtype-bundle/get/5125498b56d7ffa5a38d09fd1fd000af7af489c1.zip",
+                "reference": "5125498b56d7ffa5a38d09fd1fd000af7af489c1",
                 "shasum": ""
             },
             "require": {
+                "friendsofsymfony/jsrouting-bundle": "~1.5",
                 "php": ">=5.4",
                 "sp/bower-bundle": "~0.9",
                 "symfony/framework-bundle": "~2.2",
@@ -1580,6 +1722,9 @@
             },
             "require-dev": {
                 "phpunit/phpunit": "3.7.*"
+            },
+            "suggest": {
+                "integrated-content-bundle": "Allows use of the integrated_tinymce formtype"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -1609,7 +1754,7 @@
                 "Integrated",
                 "form"
             ],
-            "time": "2015-09-21 08:56:57"
+            "time": "2016-03-10 14:12:42"
         },
         {
             "name": "integrated/library",
@@ -1855,16 +2000,16 @@
         },
         {
             "name": "integrated/puphpet",
-            "version": "dev-INTEGRATED-672-Ubuntu",
+            "version": "0.4.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-puphpet.git",
-                "reference": "722a20e292b01257029136de2e7673f70294c72d"
+                "reference": "e7620c02773c54e68660d86c9e5d7ab0ec454dba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-puphpet/zipball/722a20e292b01257029136de2e7673f70294c72d",
-                "reference": "722a20e292b01257029136de2e7673f70294c72d",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-puphpet/zipball/e7620c02773c54e68660d86c9e5d7ab0ec454dba",
+                "reference": "e7620c02773c54e68660d86c9e5d7ab0ec454dba",
                 "shasum": ""
             },
             "type": "library",
@@ -1885,7 +2030,7 @@
                 "puphpet",
                 "vagrant"
             ],
-            "time": "2016-02-11 18:55:22"
+            "time": "2016-03-16 21:46:08"
         },
         {
             "name": "integrated/slug-bundle",
@@ -1988,16 +2133,16 @@
         },
         {
             "name": "integrated/storage-bundle",
-            "version": "0.4.x-dev",
+            "version": "0.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-storage-bundle.git",
-                "reference": "2c94f5d75452eb630981b5fddfdabab128ac0a38"
+                "reference": "d9cbac485cc83b6c644cf82ee4620b1186086197"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-storage-bundle/get/2c94f5d75452eb630981b5fddfdabab128ac0a38.zip",
-                "reference": "2c94f5d75452eb630981b5fddfdabab128ac0a38",
+                "url": "https://bitbucket.org/eactive/integrated-storage-bundle/get/d9cbac485cc83b6c644cf82ee4620b1186086197.zip",
+                "reference": "d9cbac485cc83b6c644cf82ee4620b1186086197",
                 "shasum": ""
             },
             "require": {
@@ -2031,7 +2176,7 @@
                 "Integrated",
                 "storage"
             ],
-            "time": "2016-02-11 15:28:36"
+            "time": "2016-03-10 16:14:00"
         },
         {
             "name": "integrated/theme-bundle",
@@ -2083,22 +2228,22 @@
         },
         {
             "name": "integrated/user-bundle",
-            "version": "dev-develop",
+            "version": "0.5.x-dev",
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-user-bundle.git",
-                "reference": "c98eba212ea8c158496670c5076412c92dc31e3f"
+                "reference": "a4e2b3543474b8fb67dcb1691138f40d53e5b079"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/c98eba212ea8c158496670c5076412c92dc31e3f.zip",
-                "reference": "c98eba212ea8c158496670c5076412c92dc31e3f",
+                "url": "https://bitbucket.org/eactive/integrated-user-bundle/get/a4e2b3543474b8fb67dcb1691138f40d53e5b079.zip",
+                "reference": "a4e2b3543474b8fb67dcb1691138f40d53e5b079",
                 "shasum": ""
             },
             "require": {
-                "braincrafted/bootstrap-bundle": "~2.0, >=2.0.1, !=2.0.x-dev",
                 "doctrine/doctrine-bundle": "~1.3",
                 "doctrine/orm": "~2.4",
+                "integrated/content-bundle": "~0.5",
                 "integrated/menu-bundle": "~0.3",
                 "php": ">=5.4",
                 "symfony/symfony": "~2.7"
@@ -2133,7 +2278,7 @@
                 "Integrated",
                 "content"
             ],
-            "time": "2015-08-18 14:22:59"
+            "time": "2016-03-04 14:51:17"
         },
         {
             "name": "integrated/website-bundle",
@@ -2141,12 +2286,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/integratedfordevelopers/integrated-website-bundle.git",
-                "reference": "8315f7cd013f7860c75c18022fbc8bdafca67a16"
+                "reference": "23317c480c67978d73d69bc66f2c48793a76cb30"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/8315f7cd013f7860c75c18022fbc8bdafca67a16",
-                "reference": "8315f7cd013f7860c75c18022fbc8bdafca67a16",
+                "url": "https://api.github.com/repos/integratedfordevelopers/integrated-website-bundle/zipball/23317c480c67978d73d69bc66f2c48793a76cb30",
+                "reference": "23317c480c67978d73d69bc66f2c48793a76cb30",
                 "shasum": ""
             },
             "require": {
@@ -2197,7 +2342,7 @@
                 "Integrated",
                 "website"
             ],
-            "time": "2015-12-29 18:56:52"
+            "time": "2016-03-10 16:06:39"
         },
         {
             "name": "integrated/workflow-bundle",
@@ -2205,12 +2350,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-workflow-bundle.git",
-                "reference": "455c69ace2073d0fee68ca545adfa5af0abf75b0"
+                "reference": "553df1ec3fe76643ef5dc1c42add8539c1880cc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-workflow-bundle/get/455c69ace2073d0fee68ca545adfa5af0abf75b0.zip",
-                "reference": "455c69ace2073d0fee68ca545adfa5af0abf75b0",
+                "url": "https://bitbucket.org/eactive/integrated-workflow-bundle/get/553df1ec3fe76643ef5dc1c42add8539c1880cc9.zip",
+                "reference": "553df1ec3fe76643ef5dc1c42add8539c1880cc9",
                 "shasum": ""
             },
             "require": {
@@ -2254,7 +2399,7 @@
                 "Integrated",
                 "workflow"
             ],
-            "time": "2016-02-04 14:36:12"
+            "time": "2016-03-04 15:21:58"
         },
         {
             "name": "jdorn/sql-formatter",
@@ -2886,16 +3031,16 @@
         },
         {
             "name": "monolog/monolog",
-            "version": "1.17.2",
+            "version": "1.18.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "bee7f0dc9c3e0b69a6039697533dca1e845c8c24"
+                "reference": "a5f2734e8c16f3aa21b3da09715d10e15b4d2d45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bee7f0dc9c3e0b69a6039697533dca1e845c8c24",
-                "reference": "bee7f0dc9c3e0b69a6039697533dca1e845c8c24",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a5f2734e8c16f3aa21b3da09715d10e15b4d2d45",
+                "reference": "a5f2734e8c16f3aa21b3da09715d10e15b4d2d45",
                 "shasum": ""
             },
             "require": {
@@ -2924,6 +3069,7 @@
                 "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
                 "ext-mongo": "Allow sending log messages to a MongoDB server",
                 "graylog2/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "mongodb/mongodb": "Allow sending log messages to a MongoDB server via PHP Driver",
                 "php-console/php-console": "Allow sending log messages to Google Chrome",
                 "raven/raven": "Allow sending log messages to a Sentry server",
                 "rollbar/rollbar": "Allow sending log messages to Rollbar",
@@ -2933,7 +3079,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.16.x-dev"
+                    "dev-master": "2.0.x-dev"
                 }
             },
             "autoload": {
@@ -2959,7 +3105,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2015-10-14 12:51:02"
+            "time": "2016-03-13 16:08:35"
         },
         {
             "name": "nelmio/alice",
@@ -3020,16 +3166,16 @@
         },
         {
             "name": "paragonie/random_compat",
-            "version": "v1.2.0",
+            "version": "v1.2.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/paragonie/random_compat.git",
-                "reference": "b0e69d10852716b2ccbdff69c75c477637220790"
+                "reference": "b3313b618f4edd76523572531d5d7e22fe747430"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/b0e69d10852716b2ccbdff69c75c477637220790",
-                "reference": "b0e69d10852716b2ccbdff69c75c477637220790",
+                "url": "https://api.github.com/repos/paragonie/random_compat/zipball/b3313b618f4edd76523572531d5d7e22fe747430",
+                "reference": "b3313b618f4edd76523572531d5d7e22fe747430",
                 "shasum": ""
             },
             "require": {
@@ -3064,7 +3210,7 @@
                 "pseudorandom",
                 "random"
             ],
-            "time": "2016-02-06 03:52:05"
+            "time": "2016-03-11 19:54:08"
         },
         {
             "name": "psr/log",
@@ -3458,16 +3604,16 @@
         },
         {
             "name": "symfony/assetic-bundle",
-            "version": "v2.7.1",
+            "version": "v2.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/assetic-bundle.git",
-                "reference": "d885ec8451d5a7b077bda81bb19ac9fbff9cdc76"
+                "reference": "aa5b4f8b712f38745928fa845ddb73300bb2af6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/assetic-bundle/zipball/d885ec8451d5a7b077bda81bb19ac9fbff9cdc76",
-                "reference": "d885ec8451d5a7b077bda81bb19ac9fbff9cdc76",
+                "url": "https://api.github.com/repos/symfony/assetic-bundle/zipball/aa5b4f8b712f38745928fa845ddb73300bb2af6d",
+                "reference": "aa5b4f8b712f38745928fa845ddb73300bb2af6d",
                 "shasum": ""
             },
             "require": {
@@ -3524,24 +3670,24 @@
                 "compression",
                 "minification"
             ],
-            "time": "2015-11-17 09:45:47"
+            "time": "2015-12-28 13:12:39"
         },
         {
             "name": "symfony/monolog-bundle",
-            "version": "v2.8.2",
+            "version": "v2.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/monolog-bundle.git",
-                "reference": "84785c4d44801c4dd82829fa2e1820cacfe2c46f"
+                "reference": "82fd8f36e2cccbe94faf237403c48052d4d4b77e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/monolog-bundle/zipball/84785c4d44801c4dd82829fa2e1820cacfe2c46f",
-                "reference": "84785c4d44801c4dd82829fa2e1820cacfe2c46f",
+                "url": "https://api.github.com/repos/symfony/monolog-bundle/zipball/82fd8f36e2cccbe94faf237403c48052d4d4b77e",
+                "reference": "82fd8f36e2cccbe94faf237403c48052d4d4b77e",
                 "shasum": ""
             },
             "require": {
-                "monolog/monolog": "~1.8",
+                "monolog/monolog": "~1.12",
                 "php": ">=5.3.2",
                 "symfony/config": "~2.3|~3.0",
                 "symfony/dependency-injection": "~2.3|~3.0",
@@ -3549,13 +3695,14 @@
                 "symfony/monolog-bridge": "~2.3|~3.0"
             },
             "require-dev": {
+                "phpunit/phpunit": "^4.8",
                 "symfony/console": "~2.3|~3.0",
                 "symfony/yaml": "~2.3|~3.0"
             },
             "type": "symfony-bundle",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.8.x-dev"
+                    "dev-master": "2.9.x-dev"
                 }
             },
             "autoload": {
@@ -3583,7 +3730,60 @@
                 "log",
                 "logging"
             ],
-            "time": "2015-11-17 10:02:29"
+            "time": "2016-03-13 15:55:56"
+        },
+        {
+            "name": "symfony/polyfill-apcu",
+            "version": "v1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/polyfill-apcu.git",
+                "reference": "0c901e4e65a2f7ece68f0fd249b56d6ad3adc214"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/polyfill-apcu/zipball/0c901e4e65a2f7ece68f0fd249b56d6ad3adc214",
+                "reference": "0c901e4e65a2f7ece68f0fd249b56d6ad3adc214",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.1-dev"
+                }
+            },
+            "autoload": {
+                "files": [
+                    "bootstrap.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Nicolas Grekas",
+                    "email": "p@tchwork.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony polyfill backporting apcu_* functions to lower PHP versions",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "apcu",
+                "compatibility",
+                "polyfill",
+                "portable",
+                "shim"
+            ],
+            "time": "2016-03-03 16:49:40"
         },
         {
             "name": "symfony/swiftmailer-bundle",
@@ -3644,16 +3844,16 @@
         },
         {
             "name": "symfony/symfony",
-            "version": "v2.7.9",
+            "version": "v2.7.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/symfony.git",
-                "reference": "d3646cc6875c214d211001e0673ec9e91b5f2da7"
+                "reference": "9a3b6bf6ebee49370aaf15abc1bdeb4b1986a67d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/symfony/zipball/d3646cc6875c214d211001e0673ec9e91b5f2da7",
-                "reference": "d3646cc6875c214d211001e0673ec9e91b5f2da7",
+                "url": "https://api.github.com/repos/symfony/symfony/zipball/9a3b6bf6ebee49370aaf15abc1bdeb4b1986a67d",
+                "reference": "9a3b6bf6ebee49370aaf15abc1bdeb4b1986a67d",
                 "shasum": ""
             },
             "require": {
@@ -3661,6 +3861,7 @@
                 "paragonie/random_compat": "~1.0",
                 "php": ">=5.3.9",
                 "psr/log": "~1.0",
+                "symfony/polyfill-apcu": "~1.1",
                 "twig/twig": "~1.23|~2.0"
             },
             "replace": {
@@ -3717,7 +3918,7 @@
                 "egulias/email-validator": "~1.2",
                 "ircmaxell/password-compat": "~1.0",
                 "monolog/monolog": "~1.11",
-                "ocramius/proxy-manager": "~0.4|~1.0"
+                "ocramius/proxy-manager": "~0.4|~1.0|~2.0"
             },
             "type": "library",
             "extra": {
@@ -3765,7 +3966,7 @@
             "keywords": [
                 "framework"
             ],
-            "time": "2016-01-14 10:41:56"
+            "time": "2016-02-28 20:37:19"
         },
         {
             "name": "twbs/bootstrap",
@@ -3928,20 +4129,17 @@
         },
         {
             "name": "vihuvac/recaptcha-bundle",
-            "version": "v2.0.1",
+            "version": "v2.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vihuvac/recaptcha-bundle.git",
-                "reference": "e2a0526f61a5f0eddf90d121edfe305e71e854df"
+                "reference": "896ff48bb23f3b310858044b4fae77f3f2c367ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vihuvac/recaptcha-bundle/zipball/e2a0526f61a5f0eddf90d121edfe305e71e854df",
-                "reference": "e2a0526f61a5f0eddf90d121edfe305e71e854df",
+                "url": "https://api.github.com/repos/vihuvac/recaptcha-bundle/zipball/896ff48bb23f3b310858044b4fae77f3f2c367ae",
+                "reference": "896ff48bb23f3b310858044b4fae77f3f2c367ae",
                 "shasum": ""
-            },
-            "require": {
-                "symfony/framework-bundle": "~2"
             },
             "type": "symfony-bundle",
             "extra": {
@@ -3960,13 +4158,14 @@
             ],
             "authors": [
                 {
-                    "name": "Víctor Hugo Valle Castillo",
-                    "email": "victouk@gmail.com",
-                    "homepage": "http://vihuvac.com"
-                },
-                {
                     "name": "Open Source Community",
                     "homepage": "https://github.com/vihuvac/recaptcha-bundle/contributors"
+                },
+                {
+                    "name": "Víctor Hugo Valle Castillo",
+                    "email": "victouk@gmail.com",
+                    "homepage": "http://vihuvac.com",
+                    "role": "Developer"
                 }
             ],
             "description": "This bundle provides an easy reCAPTCHA form field integration into a Symfony Project",
@@ -3977,7 +4176,7 @@
                 "google",
                 "recaptcha"
             ],
-            "time": "2015-06-08 15:09:26"
+            "time": "2016-03-01 02:53:43"
         },
         {
             "name": "willdurand/jsonp-callback-validator",
@@ -4021,21 +4220,12 @@
         }
     ],
     "packages-dev": [],
-    "aliases": [
-        {
-            "alias": "0.5",
-            "alias_normalized": "0.5.0.0",
-            "version": "dev-INTEGRATED-370",
-            "package": "integrated/content-bundle"
-        }
-    ],
+    "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
         "symfony/assetic-bundle": 0,
         "symfony/swiftmailer-bundle": 0,
-        "symfony/monolog-bundle": 0,
-        "integrated/content-bundle": 20,
-        "integrated/puphpet": 20
+        "symfony/monolog-bundle": 0
     },
     "prefer-stable": true,
     "prefer-lowest": false,
