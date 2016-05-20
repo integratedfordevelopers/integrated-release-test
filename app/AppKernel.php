@@ -27,6 +27,7 @@ class AppKernel extends Kernel
             new Gregwar\ImageBundle\GregwarImageBundle(),
 
             new Integrated\Bundle\ContentBundle\IntegratedContentBundle(),
+            new Integrated\Bundle\CommentBundle\IntegratedCommentBundle(),
             new Integrated\Bundle\FormTypeBundle\IntegratedFormTypeBundle(),
             new Integrated\Bundle\SolrBundle\IntegratedSolrBundle(),
             new Integrated\Bundle\StorageBundle\IntegratedStorageBundle(),

@@ -26,6 +26,7 @@
         "integrated/block-bundle": "~0.5",
         "integrated/channel-bundle": "~0.5",
         "integrated/content-bundle": "~0.5",
+        "integrated/comment-bundle": "~0.6",
         "integrated/formtype-bundle": "~0.5",
         "integrated/solr-bundle": "~0.5",
         "integrated/storage-bundle": "~0.4",
