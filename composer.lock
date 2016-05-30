@@ -2245,12 +2245,12 @@
             "source": {
                 "type": "git",
                 "url": "https://bitbucket.org/eactive/integrated-storage-bundle.git",
-                "reference": "af418eb443ee43d0cd0854d68df56b0095957270"
+                "reference": "97dfaf1042858debd251573037e415ea9edfbf35"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://bitbucket.org/eactive/integrated-storage-bundle/get/af418eb443ee43d0cd0854d68df56b0095957270.zip",
-                "reference": "af418eb443ee43d0cd0854d68df56b0095957270",
+                "url": "https://bitbucket.org/eactive/integrated-storage-bundle/get/97dfaf1042858debd251573037e415ea9edfbf35.zip",
+                "reference": "97dfaf1042858debd251573037e415ea9edfbf35",
                 "shasum": ""
             },
             "require": {
@@ -2286,7 +2286,7 @@
                 "Integrated",
                 "storage"
             ],
-            "time": "2016-05-17 09:56:59"
+            "time": "2016-05-24 14:15:34"
         },
         {
             "name": "integrated/theme-bundle",
@@ -4241,16 +4241,16 @@
         },
         {
             "name": "twig/twig",
-            "version": "v1.24.0",
+            "version": "v1.24.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/twigphp/Twig.git",
-                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8"
+                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
-                "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/3566d311a92aae4deec6e48682dc5a4528c4a512",
+                "reference": "3566d311a92aae4deec6e48682dc5a4528c4a512",
                 "shasum": ""
             },
             "require": {
@@ -4298,7 +4298,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2016-01-25 21:22:18"
+            "time": "2016-05-30 09:11:59"
         },
         {
             "name": "vihuvac/recaptcha-bundle",

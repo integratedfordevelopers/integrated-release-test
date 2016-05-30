@@ -60,7 +60,6 @@ assetic:
             output: css/main.css
         integrated_js:
             inputs:
-                - @IntegratedFormTypeBundle/Resources/public/components/smalot-bootstrap-datetimepicker/js/bootstrap-datetimepicker.min.js
                 - @IntegratedFormTypeBundle/Resources/public/js/datetimepicker.js
 
 # Bootstrap Configuration
