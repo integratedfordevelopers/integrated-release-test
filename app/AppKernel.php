@@ -24,6 +24,7 @@ class AppKernel extends Kernel
             new FOS\JsRoutingBundle\FOSJsRoutingBundle(),
             new Knp\Bundle\GaufretteBundle\KnpGaufretteBundle(),
             new Vihuvac\Bundle\RecaptchaBundle\VihuvacRecaptchaBundle(),
+            new Gregwar\ImageBundle\GregwarImageBundle(),
 
             new Integrated\Bundle\ContentBundle\IntegratedContentBundle(),
             new Integrated\Bundle\FormTypeBundle\IntegratedFormTypeBundle(),
@@ -39,6 +40,8 @@ class AppKernel extends Kernel
             new Integrated\Bundle\WebsiteBundle\IntegratedWebsiteBundle(),
             new Integrated\Bundle\MenuBundle\IntegratedMenuBundle(),
             new Integrated\Bundle\WorkflowBundle\IntegratedWorkflowBundle(),
+            new Integrated\Bundle\ThompsonThemeBundle\IntegratedThompsonThemeBundle(),
+            new Integrated\Bundle\AssetBundle\IntegratedAssetBundle(),
 
             new AppBundle\AppBundle(),
         );

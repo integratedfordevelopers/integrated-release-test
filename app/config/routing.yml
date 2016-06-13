@@ -27,6 +27,7 @@ integrated_website:
 
 integrated_workflow:
     resource: "@IntegratedWorkflowBundle/Resources/config/routing/workflow.xml"
+    prefix: "/admin"
 
 fos_js_routing:
     resource: "@FOSJsRoutingBundle/Resources/config/routing/routing.xml"
